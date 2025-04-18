@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/hlStyle.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Mergence</title>
+</head>
+<body>
+    <nav>
+    <div class="logo" style="font-size: 40px">[M]</div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Report</a></li>
+            <li><a href="{% url 'hotline' %}">Hotlines</a></li>
+            <li><a href="#">Become a Partner</a></li>
+            <li><a href="#">Check Ticket</a></li>
+        </ul> 
+    </div>
+    
+    <div class="buttons">
+        <a href="#" class="btn-outline">Sign in</a>
+        <a href="#" class="btn-filled">Register</a>
+    </div>
+    </nav>
+
+    <div class="hotlines">
+        <h2>Emergency Hotlines</h2>
+        <p class="desc">Naga City</p>
+        <div class="categories">
+            <div class="type">
+                <a href="#"><p class="title">Paramedics</p><br/></a>
+                <p class="desc">Hospitals</p>
+            </div>
+            <div class="type">
+                <a href="#"><p class="title">Fire & Rescue</p><br/></a>
+                <p class="desc">Fire & Rescue Stations</p>
+            </div>
+            <div class="type">
+                <a href="#"><p class="title">Law Enforcement</p><br/></a>
+                <p class="desc">Police Stations</p>
+            </div>
+            <div class="type">
+                <a href="#"><p class="title">Disaster & Crisis</p><br/></a>
+                <p class="desc">Rescue Centers<br/>Evacuation Centers</p>
+            </div>
+            <div class="type">
+                <a href="#"><p class="title">Utility & Electrical</p><br/></a>
+                <p class="desc">Internet Service Providers<br/>Electric Distribution Offices<br/>Water Districts</p>
+            </div>
+        </div>
+    </div>
+
+  <footer>
+    <div class="socials">
+      <span>🅱</span>
+      <a href="#">✉️</a>
+      <a href="#">📷</a>
+      <a href="#">🐦</a>
+      <a href="#">🔗</a>
+    </div>
+    <div>Contact Us<br/>mergence@mail.com</div>
+  </footer>
+</body>
+</html>
